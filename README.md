@@ -51,6 +51,8 @@ In addition to the essential GNU build tools, you will need to have the GTK+ 3.0
 #### Windows
 To do cgo builds, you will need to install [MinGW](http://www.mingw.org/). In order to prevent the terminal window from appearing when your application runs, you'll need access to a copy of [editbin.exe](http://msdn.microsoft.com/en-us/library/xd3shwhf.aspx) which comes packaged with Microsoft's C/C++ build tools.
 
+    go build -ldflags -H=windowsgui
+
 #### Mac OSX
 __Note__: TrayHost requires __Go 1.1__ when targetting Mac OSX, or linking will fail due to issues with previous versions of Go and Mach-O binaries.
 
